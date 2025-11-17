@@ -1,0 +1,19 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# Data artifacts (do NOT track in Git)
+telemetry.db
+data_raw/
+data_lake/
+
+# Logs
+*.log
+
+# Notebook junk
+.ipynb_checkpoints/
+
+# macOS
+.DS_Store
+

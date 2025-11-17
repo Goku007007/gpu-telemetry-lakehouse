@@ -1,0 +1,18 @@
+version: 2
+
+models:
+  - name: gold_cluster_util_daily
+    description: "Daily cluster-level GPU/CPU utilization metrics."
+    columns:
+      - name: dt
+        description: "Date of the measurements"
+        tests:
+          - not_null
+          - unique
+      - name: avg_gpu_util
+        description: "Average GPU utilization across all machines for the day"
+      - name: p95_gpu_util
+        description: "95th percentile GPU utilization for the day"
+      - name: avg_cpu_util
+        description: "Average CPU utilization for the day"
+

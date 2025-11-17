@@ -1,0 +1,24 @@
+version: 2
+
+models:
+  - name: silver_jobs
+    description: "Cleaned job table with job_id, user_id, status, and run time."
+    columns:
+      - name: job_id
+        tests:
+          - not_null
+          - unique
+      - name: user_id
+        tests:
+          - not_null
+
+  - name: silver_gpu_timeseries
+    description: "Machine-level telemetry time-series (GPU/CPU utilization, load, etc.)."
+    columns:
+      - name: machine_id
+        tests:
+          - not_null
+      - name: ts
+        tests:
+          - not_null
+
