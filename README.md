@@ -625,15 +625,3 @@ Building a clean Medallion model (bronze → silver → gold) before adding ML a
 Once the data model was stable, adding Prefect and IsolationForest on top was straightforward.
 
 ---
-
-## License
-
-This project is provided as-is for educational and portfolio purposes.
-
-## Contact
-
-For questions or suggestions, feel free to open an issue or reach out.
-
----
-
-**Last updated:** November 2025
